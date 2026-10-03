@@ -1,8 +1,8 @@
 package ru.tpsd.eatinganimationmod;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.resource.v1.ResourceLoader;
-import net.fabricmc.fabric.api.resource.v1.pack.PackActivationType;
+import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
+import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.api.ModContainer;
 import net.minecraft.client.render.item.property.numeric.NumericProperties;
@@ -34,13 +34,14 @@ public class EatingAnimationClientMod implements ClientModInitializer {
      * Registers resourcepacks/&lt;mod id&gt; as a built-in pack for each supported mod that is installed,
      * so item definitions never reference textures of mods that are missing.
      */
+    @SuppressWarnings("deprecation") // ResourceManagerHelper is the only built-in pack API on every Fabric API for 1.21.9-1.21.11
     private static void registerSupportPacks(ModContainer container) {
         container.findPath("resourcepacks").ifPresent(root -> {
             try (Stream<Path> packs = Files.list(root)) {
                 packs.map(pack -> pack.getFileName().toString().replace("/", ""))
                         .forEach(modId -> FabricLoader.getInstance().getModContainer(modId).ifPresent(mod ->
-                                ResourceLoader.registerBuiltinPack(Identifier.of(MOD_ID, modId), container,
-                                        Text.literal("Eating Animation: " + mod.getMetadata().getName()), PackActivationType.DEFAULT_ENABLED)));
+                                ResourceManagerHelper.registerBuiltinResourcePack(Identifier.of(MOD_ID, modId), container,
+                                        Text.literal("Eating Animation: " + mod.getMetadata().getName()), ResourcePackActivationType.DEFAULT_ENABLED)));
             } catch (IOException e) {
                 LOGGER.error("Failed to list Eating Animation support packs", e);
             }
