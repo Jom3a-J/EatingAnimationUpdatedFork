@@ -1,14 +1,31 @@
-# Eating Animation
+# Eating Animation (Updated)
 
-<img align="right" width="160" src="src/main/resources/assets/eatinganimationid/eatinganimationicon.png">
+<img align="right" width="140" src="src/main/resources/assets/eatinganimationid/eatinganimationicon.png">
 
-[![CurseForge Downloads](https://cf.way2muchnoise.eu/full_527023_downloads.svg)](https://curseforge.com/minecraft/mc-mods/eating-animation-fabric)
-[![Minecraft Versions](https://cf.way2muchnoise.eu/versions/527023.svg)](https://curseforge.com/minecraft/mc-mods/eating-animation-fabric)
+A small client-side Fabric mod that animates food and potions while you eat or drink them. You see the bites happen in your hand, while the icon in your inventory stays whole.
 
-Eating Animation is a Minecraft mod for fabric loader. This is a simple client-sided mod that will add eating animation for food and potions.
+This is my fork of [Eating Animation](https://github.com/Theoness1/EatingAnimation) by theone_ss, which stopped at 1.21. I've updated it to work on newer versions. If you're on 1.20.6 or older, grab the [original](https://modrinth.com/mod/eating-animation) instead.
 
-#### [Discord Server](https://discord.gg/DcemWeskeZ) | [Modrinth Page](https://modrinth.com/mod/eating-animation) | [CurseForge Page](https://curseforge.com/minecraft/mc-mods/eating-animation-fabric)
+## Versions
 
-## Resource Pack
+| Minecraft | Branch |
+|---|---|
+| 26.1 – 26.3 | `26.x` |
+| 1.21.9 – 1.21.11 | `1.21.11` |
+| 1.21.4 – 1.21.8 | `1.21.8` |
+| 1.21.2 – 1.21.3 | `1.21.3` |
+| 1.21 – 1.21.1 | `1.21` |
 
-Resource pack for mods included in Minecraft -> Resource packs
+Needs Fabric API.
+
+## Mod support
+
+It also animates food from Farmer's Delight, Expanded Delight, Create, Botania, BetterEnd, BetterNether, Naturalist, The Bumblezone, Adorn, Additional Additions, Hybrid Aquatic, Duckling, Snow Pig, Winterly and Food Plus. These kick in automatically when the mod is installed.
+
+## Building
+
+Check out the branch for your version and run `./gradlew build` (JDK 25 for `26.x`, JDK 21 for the rest). The jar ends up in `build/libs/`.
+
+## Credits
+
+All credit for the original mod goes to theone_ss, spusik_, PinkGoosik and DoctorNight1. MIT licensed, see [LICENSE](LICENSE).
