@@ -16,7 +16,7 @@ This is my fork of [Eating Animation](https://github.com/Theoness1/EatingAnimati
 | 1.21.2 – 1.21.3 | `1.21.3` |
 | 1.21 – 1.21.1 | `1.21` |
 
-Needs Fabric API.
+Download the jar for your version from the [latest release](https://github.com/Jom3a-J/EatingAnimationUpdatedFork/releases/latest). Needs Fabric API.
 
 ## Mod support
 
