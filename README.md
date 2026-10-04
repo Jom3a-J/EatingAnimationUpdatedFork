@@ -2,6 +2,8 @@
 
 <img align="right" width="140" src="src/main/resources/assets/eatinganimationid/eatinganimationicon.png">
 
+[![Release](https://img.shields.io/github/v/release/Jom3a-J/EatingAnimationUpdatedFork)](https://github.com/Jom3a-J/EatingAnimationUpdatedFork/releases/latest)
+
 A small client-side Fabric mod that animates food and potions while you eat or drink them. You see the bites happen in your hand, while the icon in your inventory stays whole.
 
 This is my fork of [Eating Animation](https://github.com/Theoness1/EatingAnimation) by theone_ss, which stopped at 1.21. I've updated it to work on newer versions. If you're on 1.20.6 or older, grab the [original](https://modrinth.com/mod/eating-animation) instead.
