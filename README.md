@@ -22,7 +22,7 @@ Download the jar for your version from the [latest release](https://github.com/J
 
 ## Mod support
 
-It also animates food from Farmer's Delight, Expanded Delight, Create, Botania, BetterEnd, BetterNether, Naturalist, The Bumblezone, Adorn, Additional Additions, Hybrid Aquatic, Duckling, Snow Pig, Winterly and Food Plus. These kick in automatically when the mod is installed.
+It also animates food from Farmer's Delight, Expanded Delight, Create, Botania, BetterEnd, BetterNether, Naturalist, The Bumblezone, Adorn, Additional Additions, Hybrid Aquatic, Duckling, Snow Pig, Winterly and Food+. These kick in automatically when the mod is installed.
 
 ## Building
 
