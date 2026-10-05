@@ -1,6 +1,6 @@
 # Eating Animation (Updated)
 
-<img align="right" width="140" src="src/main/resources/assets/eatinganimationid/eatinganimationicon.png">
+<img align="right" width="140" src=".github/logo.png">
 
 [![Release](https://img.shields.io/github/v/release/Jom3a-J/EatingAnimationUpdatedFork)](https://github.com/Jom3a-J/EatingAnimationUpdatedFork/releases/latest)
 
